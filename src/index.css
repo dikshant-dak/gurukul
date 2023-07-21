@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    /* background-image: url("./assets/background.jpg");
+    background-size: cover; */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url("./assets/background.jpg");
+     background-size: cover; */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
