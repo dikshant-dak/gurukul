@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 import HeaderImage from "../assets/First/image-asset.jpeg";
 import BannerImg from "../assets/SVG Images/undraw_online_stats_0g94 1.png";
 import Footer from '../components/Footer';
 
 const Home = () => {
+    let navigate = useNavigate();
+    const routeChange=()=>{
+        let path=`/about`;
+        navigate(path);
+    }
     return (
         <>
 
@@ -20,7 +25,7 @@ const Home = () => {
 
                         <ul className="flex text-sm font-normal">
                             <li className="mx-[10px] cursor-pointer hover:opacity-90">Home</li>
-                            <li className="mx-[10px] cursor-pointer hover:opacity-90">About</li>
+                            <li onClick={routeChange} className="mx-[10px] cursor-pointer hover:opacity-90" >About</li>
                             <li className="mx-[10px] cursor-pointer hover:opacity-90">Courses</li>
                             <li className="mx-[10px] cursor-pointer hover:opacity-90">Contact Us</li>
                         </ul>
